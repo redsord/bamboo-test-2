@@ -23,7 +23,7 @@ public:
     }
 
     void test_strcpy() {
-        strcpy(_buffer, "Hello, world!");
+        strcpy_s(_buffer, 14, "Hello, world!");
         TS_ASSERT_EQUALS(_buffer[0], 'H');
         TS_ASSERT_EQUALS(_buffer[1], 'E');
     }
